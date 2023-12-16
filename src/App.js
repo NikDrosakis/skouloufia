@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Iframe from 'react-iframe'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="mapouter">
+          <div className="gmap_canvas">
+            <Iframe className="gmap_iframe" width="100%" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"
+                    src="https://maps.google.com/maps?width=641&amp;height=509&amp;hl=en&amp;q=skouloufia&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></Iframe>
+          </div>
+        </div>
       </header>
     </div>
   );
